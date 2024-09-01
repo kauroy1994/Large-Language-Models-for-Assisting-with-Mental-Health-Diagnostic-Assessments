@@ -27,7 +27,15 @@ output_ids = model.generate(input_ids.to('cuda'))
 response = tokenizer.decode(output_ids[0][input_ids.shape[1]:], skip_special_tokens=True)
 
 ''' Model Response
-[['Feeling-bad-about-yourself-or-that-you-are-a-failure-or-have-let-yourself-or-your-family-down', 'yes'], ['Feeling-down-depressed-or-hopeless', 'yes'], ['Feeling-tired-or-having-little-energy', 'yes'], ['Little-interest-or-pleasure-in-doing ', 'yes'], ['Moving-or-speaking-so-slowly-that-other-people-could-have-noticed-Or-the-opposite-being-so-fidgety-or-restless-that-you-have-been-moving-around-a-lot-more-than-usual', 'no'], ['Poor-appetite-or-overeating', 'no'], ['Thoughts-that-you-would-be-better-off-dead-or-of-hurting-yourself-in-some-way', 'no'], ['Trouble-concentrating-on-things-such-as-reading-the-newspaper-or-watching-television', 'yes'], ['Trouble-falling-or-staying-asleep-or-sleeping-too-much', 'no']]
+[['Feeling-bad-about-yourself-or-that-you-are-a-failure-or-have-let-yourself-or-your-family-down', 'yes'],
+['Feeling-down-depressed-or-hopeless', 'yes'],
+['Feeling-tired-or-having-little-energy', 'yes'],
+['Little-interest-or-pleasure-in-doing ', 'yes'],
+['Moving-or-speaking-so-slowly-that-other-people-could-have-noticed-Or-the-opposite-being-so-fidgety-or-restless-that-you-have-been-moving-around-a-lot-more-than-usual', 'no'],
+['Poor-appetite-or-overeating', 'no'],
+['Thoughts-that-you-would-be-better-off-dead-or-of-hurting-yourself-in-some-way', 'no'],
+['Trouble-concentrating-on-things-such-as-reading-the-newspaper-or-watching-television', 'yes'],
+['Trouble-falling-or-staying-asleep-or-sleeping-too-much', 'no']]
 '''
 print(response)
 ```
